@@ -31,6 +31,12 @@ This project uses Django with sqlite for database handling and Bootstrap for sty
 
 ## Usage
 This can be used to collect recipies and gather data on which ones are the most popular.
+![First Page](/First_page.png)
+![Second Page](/page2.png)
+![Third Page](/page3.png)
+![Fourth Page](/page4.png)
+
+
 
 ## Credits and Highlights
 Django Documentation: The official Django documentation was incredibly helpful during development 🚀
