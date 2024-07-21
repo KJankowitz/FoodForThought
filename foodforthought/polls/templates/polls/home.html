@@ -1,0 +1,26 @@
+{% extends "polls/headpoll.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">View Recipies</h5>
+          <p class="card-text">Have a look at the delicious recipies we have curated.</p>
+          <a href="{% url 'recipies:list' %}" class="btn btn-info">Click for Food</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Vote on Recipies</h5>
+          <p class="card-text">Give your opinion on our recipe library.</p>
+          <a href="{% url 'polls:index' %}" class="btn btn-danger">Click for Thoughts</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

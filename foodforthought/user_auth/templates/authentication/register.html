@@ -1,0 +1,15 @@
+{% extends "polls/headpoll.html" %}
+
+{% block title %}Register New User{% endblock %}
+
+{% block content %}
+<div class="container">
+    <form action="{% url 'user_auth:register' %}" method="post">
+        {% csrf_token %}
+        
+        {{ form }}
+        
+        <input  class="btn btn-danger" type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

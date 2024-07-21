@@ -1,0 +1,23 @@
+{% extends "polls/headpoll.html" %}
+
+{% block title %} {{ recipe.recipe_text }} {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="card p-2">
+    <h2> {{ recipe.recipe_text }} </h2>
+
+    <ul>
+        {% for choice in recipe.choice_set.all %}
+        <li>
+            {{ choice.choice_text }} -- {{ choice.votes }}
+            vote{{choice.votes|pluralize}}
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="d-grid gap-2 d-md-block">
+        <a class="btn btn-info" href="{% url 'polls:index' %}">
+            Vote again?
+        </a>
+    </div>
+</div>
+{% endblock %}

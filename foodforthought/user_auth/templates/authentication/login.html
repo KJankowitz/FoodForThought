@@ -1,0 +1,23 @@
+{% extends "polls/headpoll.html" %}
+
+{% block title %}Login As User{% endblock %}
+
+{% block content %}
+
+<form action="{% url 'user_auth:authenticate_user' %}" method="post">
+    {% csrf_token %}
+
+    <div class="mb-3">
+    <label>Username</label>
+    <input type="text" name="username" placeholder="User" required>
+    <br/><br/>
+    </div>
+    <div class="mb-3">
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <br/><br/>
+    </div>
+    <input type="submit" value="Login" />
+</form>
+
+{% endblock %}

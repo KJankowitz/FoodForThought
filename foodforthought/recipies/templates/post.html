@@ -1,0 +1,16 @@
+{% extends "polls/headpoll.html" %}
+
+{% block title %}Recipe {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <h3><a href="/recipies/{{post.id}}" class="link-info link-offset-2 link-underline link-underline-opacity-0" >{{ post.title }}</a></h3>
+
+<h6> on {{ post.date }}</h6>
+<div class="container">
+    {{ post.body|safe|linebreaks }}
+</div>
+<br>{{ post.signature }}<br>
+{% endblock %}
+</div>
