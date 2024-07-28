@@ -1,0 +1,7 @@
+FoodforThought
+==============
+
+.. toctree::
+   :maxdepth: 4
+
+   FoodforThought
