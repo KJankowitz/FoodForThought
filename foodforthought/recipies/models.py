@@ -6,14 +6,14 @@ class Post(models.Model):
     """This class represents a recipe in our blog app.
 
     Attributes:
-    - :param title: The main title for the recipe.
-    - :type: Character text field max length of 140.
-    - :param body: The body text of the recipe.
-    - :type: Character text field.
-    - :param signature: Signature added to the end of every recipe blog entry.
-    - :type: Character text field max length of 140.
-    - :param date: Date the blog recipe entry was captured.
-    - :type: Datetime.
+    :param title: The main title for the recipe.
+    :type: Character text field max length of 140.
+    :param body: The body text of the recipe.
+    :type: Character text field.
+    :param signature: Signature added to the end of every recipe blog entry.
+    :type: Character text field max length of 140.
+    :param date: Date the blog recipe entry was captured.
+    :type: Datetime.
     """
     title = models.CharField(max_length=140)
     body = models.TextField()
