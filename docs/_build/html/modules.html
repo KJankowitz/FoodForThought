@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="FoodforThought package" href="FoodforThought.html" />
+    <link rel="next" title="polls package" href="polls.html" />
     <link rel="prev" title="FoodforThought documentation" href="index.html" /> 
 </head>
 
@@ -47,7 +47,8 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">FoodforThought</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="FoodforThought.html">FoodforThought package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html">polls package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recipies.html">recipies package</a></li>
 </ul>
 </li>
 </ul>
@@ -80,12 +81,54 @@
 <h1>FoodforThought<a class="headerlink" href="#foodforthought" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="FoodforThought.html">FoodforThought package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="FoodforThought.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FoodforThought.html#foodforthought-polls-module">FoodforThought.polls module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FoodforThought.html#foodforthought-recipies-module">FoodforThought.recipies module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FoodforThought.html#foodforthought-user-auth-module">FoodforThought.user_auth module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="FoodforThought.html#module-foodforthought">Module contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polls.html">polls package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polls.html#module-polls.models">polls.models module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.models.Choice"><code class="docutils literal notranslate"><span class="pre">Choice</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Choice.DoesNotExist</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Choice.MultipleObjectsReturned</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.choice_text"><code class="docutils literal notranslate"><span class="pre">Choice.choice_text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.id"><code class="docutils literal notranslate"><span class="pre">Choice.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.objects"><code class="docutils literal notranslate"><span class="pre">Choice.objects</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.recipe"><code class="docutils literal notranslate"><span class="pre">Choice.recipe</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.recipe_id"><code class="docutils literal notranslate"><span class="pre">Choice.recipe_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Choice.votes"><code class="docutils literal notranslate"><span class="pre">Choice.votes</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="polls.html#polls.models.Recipe"><code class="docutils literal notranslate"><span class="pre">Recipe</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Recipe.DoesNotExist</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Recipe.MultipleObjectsReturned</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.choice_set"><code class="docutils literal notranslate"><span class="pre">Recipe.choice_set</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.get_next_by_pub_date"><code class="docutils literal notranslate"><span class="pre">Recipe.get_next_by_pub_date()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.get_previous_by_pub_date"><code class="docutils literal notranslate"><span class="pre">Recipe.get_previous_by_pub_date()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.id"><code class="docutils literal notranslate"><span class="pre">Recipe.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.objects"><code class="docutils literal notranslate"><span class="pre">Recipe.objects</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.pub_date"><code class="docutils literal notranslate"><span class="pre">Recipe.pub_date</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="polls.html#polls.models.Recipe.recipe_text"><code class="docutils literal notranslate"><span class="pre">Recipe.recipe_text</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recipies.html">recipies package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="recipies.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recipies.html#module-recipies.models">recipies.models module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="recipies.html#recipies.models.Post"><code class="docutils literal notranslate"><span class="pre">Post</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Post.DoesNotExist</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Post.MultipleObjectsReturned</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.body"><code class="docutils literal notranslate"><span class="pre">Post.body</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.date"><code class="docutils literal notranslate"><span class="pre">Post.date</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.get_next_by_date"><code class="docutils literal notranslate"><span class="pre">Post.get_next_by_date()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.get_previous_by_date"><code class="docutils literal notranslate"><span class="pre">Post.get_previous_by_date()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.id"><code class="docutils literal notranslate"><span class="pre">Post.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.objects"><code class="docutils literal notranslate"><span class="pre">Post.objects</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.signature"><code class="docutils literal notranslate"><span class="pre">Post.signature</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="recipies.html#recipies.models.Post.title"><code class="docutils literal notranslate"><span class="pre">Post.title</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -97,7 +140,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="FoodforThought documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="FoodforThought.html" class="btn btn-neutral float-right" title="FoodforThought package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="polls.html" class="btn btn-neutral float-right" title="polls package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

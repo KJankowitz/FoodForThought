@@ -4,4 +4,6 @@ FoodforThought
 .. toctree::
    :maxdepth: 4
 
-   FoodforThought
+   polls
+   recipies
+   user_auth
