@@ -10,24 +10,29 @@
 ## Introduction
 This project gathers recipies in the format of a blog with database elements. For user interaction, there is also a polling 
 function to vote on recipies. Authorisation practices are followed, and users need to be registered and logged in to vote on the polling app.
-This project uses Django with sqlite for database handling and Bootstrap for styling. 
+This project uses Django with sqlite for database handling and Bootstrap for styling and is packaged in a Docker container. 
 
 ## Installation
-* Prerequisites
-  Before you begin, ensure you have the following installed:
 
-  * Python 3.x
-  * Django (you can install it using pip install django)
 * Steps
   * Clone this repository: git clone https://github.com/kjankowitz/FoodForThought.git
   * Navigate to the project directory: cd FoodForThought
-  * Create a virtual environment: python -m venv venv
-  * Activate the virtual environment:
-  * On Windows: venv\Scripts\activate
-  * On macOS/Linux: source venv/bin/activate
-  * Install project dependencies: pip install -r requirements.txt
-  * Run database migrations: python manage.py migrate
-  * Start the development server: python manage.py runserver
+  * To run **locally** :
+    * Create a virtual environment: python -m venv venv
+    * Activate the virtual environment:
+    * On Windows: venv\Scripts\activate
+    * On macOS/Linux: source venv/bin/activate
+    * Install project dependencies: pip install -r requirements.txt
+    * Run database migrations: python manage.py migrate
+    * Start the development server: python manage.py runserver
+  * To run in the **Docker container**
+    * docker build -t kardo10/food-for-thought .
+    * docker run -p 8000:8000 kardo10/food-for-thought
+
+  * Create your own Django Secret Key (if necessary) by using the following python code:
+    `from django.core.management.utils import get_random_secret_key
+    print(get_random_secret_key())`
+
 
 ## Usage
 This can be used to collect recipies and gather data on which ones are the most popular.
