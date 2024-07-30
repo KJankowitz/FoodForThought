@@ -30,6 +30,7 @@ This project uses Django with sqlite for database handling and Bootstrap for sty
     * docker run -p 8000:8000 kardo10/food-for-thought
 
   * Create your own Django Secret Key (if necessary) by using the following python code:
+  
     `from django.core.management.utils import get_random_secret_key
     print(get_random_secret_key())`
 
